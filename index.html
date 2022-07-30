@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="title">Calculator Project</div>
+
+            <label for="numberOne">First Number:</label><br>
+            <input type="number" class="firstNo" id="firstNo" placeholder="Enter first number...">
+            <br><small class="error" id="firstError" >First number is required.</small>
+            
+            <br>
+            <label for="numberTwo">Second Number:</label><br>
+            <input type="number" class="secondNo" placeholder="Enter second number...">
+            <br><small class="error" id="secondError" >Second number is required.</small>
+            <br>
+            <label for="numberOne" class="operators">Operators..</label><br>
+                <select name="" id="operator" class="selection">
+                    <option value="Empty">Choose option..</option>
+                    <option value="add">+</option>
+                    <option value="minus">-</option>
+                    <option value="multiply">*</option>
+                    <option value="division">/</option>
+                    <option value="modulus">%</option>
+                    
+                </select>
+                <br><small class="error" id="operatorError" >Operator is required.</small>
+                <br>
+            
+            <label for="answer">Answer:</label>
+            <div class="outPut"></div>
+            <button type="button" class="calculator" >Calculatae</button>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
