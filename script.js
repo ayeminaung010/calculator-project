@@ -45,10 +45,11 @@ btnCalculate.addEventListener("click", function() {
             case "default" :
                 Answer.innerHTML = "Operation Error Try again";
                 break;
-        }
+        };
+        Answer.innerHTML = finalResult;
     }
     
-    Answer.innerHTML = finalResult;
+    
      
 })
 function checkValidation(num1,num2,operator) {
